@@ -1,0 +1,78 @@
+All versions of PiMP come with ASIC/FPGA mining support ready to go.
+Features:
+A large variety of device drivers for Bitcoin (SHA256d):
+ASICMINER Block Erupter blades, cubes, USB miners (Emerald and Sapphire), and Tube
+BFx2 Bitfury USB miner
+Bi•Fury
+Big Picture Mining Bitfury-based USB miners (BF1, RedFury, BlueFury)
+BitCentury LittleFury USB miners
+Bitmain AntMiner S1 – S4 and S5
+Bitmain AntMiner U1 – U3
+BlackArrow Prospero X-1.5
+BTCFPGA’s ModMiner Quad FPGA-based mining device
+Butterfly Labs’s FPGA and ASIC mining products (BitForce, MiniRig, Monarch)
+Canaan Creative Avalon1/2/3 ASIC mining rigs
+The Chili miner assembly
+Cointamination
+CoinTerra TerraMiner ASIC miner
+Drillbit Thumb and Eight
+DualMiner ASIC-based USB miner
+Enterpoint’s Cairnsmore1 FPGA mining board
+FPGA Mining X6500
+GekkoScience Compac BM1384 USB stick
+HashBuster mining boards
+HashFast Baby Jet
+Intron/C-scape BitFury-based mining boards
+JingTian miner
+Klondike boards
+KnCMiner Mercury, Saturn, Jupiter, and Neptune
+Metabank gen 1 (old) BitFury-based mining device
+NanoFury NF1 and NF2 units
+One String Miner
+Qi Hardware’s Icarus and Lancelot FPGA mining boards
+ROCKMINER 30 Gh/s R-BOX and T1
+Spondoolies SP10 and SP30
+Twinfury USB stick miner
+Ztex’s 1.15x and 1.15y FPGA boards
+
+OpenCL GPUs, such as AMD Radeons (disabled by default, see README.GPU)
+Kernels: Diablo, DiaKGCN, Phatk and poclbm
+BFI_INT patching for Catalyst versions before 13.2
+Vector support
+Dynamic intensity that keeps desktop interactive under load and maximises throughput when desktop idle
+Support for mining with free Mesa/LLVM OpenCL
+CPU (not enabled by default nor included in Windows build)
+
+A variety of device drivers for scrypt:
+AlcheMiner Alchemist miner
+DualMiner ASIC-based USB miner
+GAW War Machine
+Gridseed mining devices
+KnCMiner Titan
+ZeusMiner units
+OpenCL GPUs, such as AMD Radeons (disabled by default, see README.GPU)
+Kernels: ckolivas, lsoc, psw, zuikkis
+CPU (not enabled by default nor included in Windows build)
+
+CPU and OpenCL/GPU mining for Keccak (SHA-3)
+Automatically can configure itself to failover to solo mining and local block submission when Bitcoin Core is running
+Support for getblocktemplate decentralized mining protocol (no proxy needed!)
+Builtin stratum and getwork proxy server
+Very low overhead free C code for Linux and Windows with very low CPU usage
+Integrated overclocking and fan control (including automatic adjustment, if configured)
+Heavily threaded code hands out work retrieval and work submission to separate threads to not hinder devices working
+Caching of submissions during transient network outages
+Preemptive generation of work prior to completion of current work
+Automatically detects failing pools and disables them
+Multi-device support (all or discrete selection)
+Summarised and discrete device data statistics of requests, accepts, rejects, hw errors, efficiency and utility
+Watchdog thread to restart idle threads but not crash machine if they don’t respond
+Summary displayed when quitting
+Supports multiple pools with multiple intelligent failover mechanisms
+On the fly menu based management of most settings
+Trickling of extra work to backup pools if primary pool is responding but slow
+On the fly enabling/disable/restarting of devices
+Device temperature monitoring (for devices that support it)
+Reuses persistent connections when possible
+RPC interface for remote control
+Ability to cope with slow routers
